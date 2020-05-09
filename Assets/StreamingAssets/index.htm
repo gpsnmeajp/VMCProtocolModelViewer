@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+		<link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+		<script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+		<title>VMCProtocolModelViewer</title>
+	</head>
+	<body>
+		<ons-page>
+			<ons-toolbar>
+				<div class="center">VMC Protocol Model Viewer</div>
+			</ons-toolbar>
+			<ons-list>
+				<ons-list-header>Root Synchronize Option</ons-list-header>
+				<ons-list-item><div class="center">RootPositionSynchronize</div><div class="right"><ons-switch></ons-switch></div></ons-list-item>
+				<ons-list-item><div class="center">RootRotationSynchronize</div><div class="right"><ons-switch></ons-switch></div></ons-list-item>
+
+				<ons-list-header>Other Synchronize Option</ons-list-header>
+				<ons-list-item><div class="center">BlendShapeSynchronize</div><div class="right"><ons-switch></ons-switch></div></ons-list-item>
+				<ons-list-item><div class="center">BonePositionSynchronize</div><div class="right"><ons-switch></ons-switch></div></ons-list-item>
+
+				<ons-list-header>Synchronize Cutoff Option</ons-list-header>
+				<ons-list-item><div class="center">HandPoseSynchronizeCutoff</div><div class="right"><ons-switch></ons-switch></div></ons-list-item>
+				<ons-list-item><div class="center">EyeBoneSynchronizeCutoff</div><div class="right"><ons-switch></ons-switch></div></ons-list-item>
+
+				<ons-list-header>Lowpass Filter Option</ons-list-header>
+				<ons-list-item><div class="center">BonePositionFilterEnable</div><div class="right"><ons-switch></ons-switch></div></ons-list-item>
+				<ons-list-item><div class="center">BoneRotationFilterEnable</div><div class="right"><ons-switch></ons-switch></div></ons-list-item>
+		</ons-page>
+	</body>
+</html>
