@@ -39,6 +39,8 @@ namespace EVMC4U
     {
         [Header("CameraReceiver v1.1")]
         public Camera VMCControlledCamera = null; //VMCカメラ制御同期
+        public Transform CameraScale;
+        public ExternalReceiver externalReceiver;
         [SerializeField]
         private string StatusMessage = "";  //Inspector表示用
 
@@ -79,6 +81,9 @@ namespace EVMC4U
 
         void Update()
         {
+            CameraScale.localPosition = -externalReceiver.offset;
+            CameraScale.localScale = externalReceiver.scale;
+
             //カメラがセットされているならば
             if (VMCControlledCamera != null && VMCControlledCamera.transform != null && fov != 0)
             {

@@ -133,10 +133,11 @@ namespace EVMC4U
         const int PACKET_LIMIT_MAX = 30;
 
         //メッセージ処理一時変数struct(負荷対策)
-        Vector3 pos;
-        Quaternion rot;
-        Vector3 scale;
-        Vector3 offset;
+        [Header("Model transform (Read only)")]
+        public Vector3 pos;
+        public Quaternion rot;
+        public Vector3 scale = Vector3.one;
+        public Vector3 offset;
 
         public void Start()
         {
@@ -457,6 +458,8 @@ namespace EVMC4U
                 }
                 else {
                     Model.transform.localScale = Vector3.one;
+                    scale = Vector3.one;
+                    offset = Vector3.zero;
                 }
             }
             //ボーン姿勢
