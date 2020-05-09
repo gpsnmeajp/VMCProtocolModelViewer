@@ -4,6 +4,8 @@
 
 Unity 2018.4.19f1をお持ちであればダウンロードするだけでビルドできますので、シェーダーや背景など追加して使うこともできると思います。
 
+**[ダウンロード](https://github.com/gpsnmeajp/VMCProtocolModelViewer/releases)**  
+
 [VMC Protocol対応](https://sh-akira.github.io/VirtualMotionCaptureProtocol/)  
 <img src="https://github.com/gpsnmeajp/VMCProtocolModelViewer/blob/master/logo/vmpc_logo_128x128.png?raw=true"></img>
 
